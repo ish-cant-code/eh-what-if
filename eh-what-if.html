@@ -1,0 +1,56 @@
+<!doctype html>
+
+	<html lang="en">
+		
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title> eh what if... </title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		
+		<body align="center">
+		
+						
+			<div class="hollow">
+				<h1> EH PAANO KUNG </h1>
+			</div>
+		
+			<div class="ripple">
+				<div></div>
+				<div></div>
+			</div>
+		
+			<div class="clickme">
+				<img src="graphics/click.png" width="500px">
+			</div>
+
+			<div class="player">
+				<img src="graphics/play.png" width="80px" id="icon">
+			</div>
+			
+			<audio loop id="bgm">
+				<source src="eh-paano-kung.mp3" type="audio/mp3">
+			</audio>
+
+			<script>
+				var bgm = document.getElementById("bgm");
+				var icon = document.getElementById("icon");
+				
+				icon.onclick = function(){
+							if(bgm.paused){
+								bgm.play();
+								icon.src = "graphics/pause.png";
+							}else{
+								bgm.pause();
+								icon.src = "graphics/play.png";
+							}
+										 }
+				
+			</script>
+			
+
+
+		
+		</body>
+		
+	</html>

@@ -1,0 +1,102 @@
+html { 
+	  background: url(aesthetic-night-pixel-art.gif) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+  	 }
+	 
+.hollow h1 {
+		font-family: arial;
+		font-size: 200px;
+		left: 0;
+		right: 0;
+		color: transparent;
+		line-height: 1em;
+		-webkit-text-stroke: 1px white;
+		background: url(graphics/back.png);
+		-webkit-background-clip: text;
+		background-position: 0 0;
+		animation: back 20s linear infinite;
+		   }
+		   
+@keyframes back {
+			100%{
+				background-position: 2000px 0;
+				
+			}
+				}
+	 
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+  }
+  
+.clickme {
+		position: absolute;
+		float: right;
+	    left: 0;
+	    right: 0;
+	    top: 390px;
+		z-index: 2;
+		 }
+  
+.player {
+		position: absolute;
+		float: right;
+		align-item: center;
+	    left: 0;
+	    right: 0;
+	    top: 412px;
+		z-index: 3;
+		}
+		
+.ripple {
+	  width: 500px;
+	  height: 500px;
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  top: 200px;
+	  margin: 0 auto;
+		float: right;
+		display: flex;
+		align-items: right;	
+		z-index: 1;
+		}
+.ripple div {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%,-50%);
+		  border: 8px solid #A93CFF;
+		  animation: ripple 1s cubic-bezier(.03,.54,.6,.63) infinite;
+		  border-radius: 50%;
+			}
+.ripple div:nth-child(2) {
+				  animation-delay: 0.5s;
+						 }
+
+@keyframes ripple {
+  0%{
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5%{
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5.1%{
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100%{
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
